@@ -24,10 +24,8 @@ export const env = createEnv({
     DISCORD_CLIENT_ID: z.string(),
     DISCORD_CLIENT_SECRET: z.string(),
     
-    // Planning Center API Personal Access Token
-    app_id: b3174322c8f852b9ee197055f6fa80b347062558817f25a8584b52b65e5f9a5a
-    secret: b604e98a69121846a2320e09f0e60556ed84ba5200a1d039a2a6847fee288d0b
-  },
+    // Planning Center API Key
+    PCO_API_KEY: z.string(),
 
   /**
    * Specify your client-side environment variables schema here. This way you can ensure the app
@@ -49,5 +47,6 @@ export const env = createEnv({
     NEXTAUTH_URL: process.env.NEXTAUTH_URL,
     DISCORD_CLIENT_ID: process.env.DISCORD_CLIENT_ID,
     DISCORD_CLIENT_SECRET: process.env.DISCORD_CLIENT_SECRET,
+    PCO_APP_ID: process.env.PCO_API_KEY,
   },
 });
