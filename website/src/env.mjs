@@ -23,6 +23,10 @@ export const env = createEnv({
     // Add `.min(1) on ID and SECRET if you want to make sure they're not empty
     DISCORD_CLIENT_ID: z.string(),
     DISCORD_CLIENT_SECRET: z.string(),
+    
+    // Planning Center API Personal Access Token
+    app_id: b3174322c8f852b9ee197055f6fa80b347062558817f25a8584b52b65e5f9a5a
+    secret: b604e98a69121846a2320e09f0e60556ed84ba5200a1d039a2a6847fee288d0b
   },
 
   /**
