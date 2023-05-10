@@ -1,34 +1,27 @@
-import React from 'react'
 
-
-type Track = {
-    name: string
-    uri: string
+type SongCardProps = {
+    song: string
+    artist: string
+    album?: string
+    cover: string
 }
-type Artist = {
-    name: string
-    uri: string
-}
-type Album = {
-    name: string
-    type: string
-    uri: string
-    image: string
-}
-type SongCardProps = {}
 
 
 
 
 
-export default function SongCard() {
+export default function SongCard({song, artist, album, cover}: SongCardProps) {
 
 
 
   return (
-    <div>
-
-
+    <div className="card ">
+      <figure><img src={cover} /></figure>
+      <div className="card-body p-2">
+        <h2 className="card-title">{song}</h2>
+        <p className="">{artist}</p>
+        <p className="">{album}</p>
+      </div>
     </div>
   )
 }
