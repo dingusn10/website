@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const fullYear = new Date();
 const year = fullYear.getFullYear();
